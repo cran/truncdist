@@ -1,0 +1,16 @@
+fc77009d96dcf3ff1b56edcb8be28dac *DESCRIPTION
+9a5f3b4886c1a0d7757c3a0abe502397 *NAMESPACE
+065b020131809d34388fb6ffbca3b56f *R/dtrunc.R
+3db892134006e66c840b2f6aa4b2f951 *R/extrunc.R
+9203c3042338bd35fe1936d3ec3fe9d5 *R/ptrunc.R
+1a81750656b33c0b908027fa7cb8ca3f *R/qqtrunc.R
+cfed3b61ce88ed4292fc8b1e3a063953 *R/qtrunc.R
+ef5fe3a691bb8cf72f09156d19c4545d *R/rtrunc.R
+e21aaa64d9edd2a6d9bce0e01e3cc64b *R/vartrunc.R
+75f75d3ab619b4a27e8bf98e8b4b0bf8 *man/dtrunc.Rd
+d89138714f34628a37c328a7d8d4c457 *man/extrunc.Rd
+189acd61827016bd6a46ce8e54a416ee *man/ptrunc.Rd
+162910870ff0e48e6b11a99ac50126f9 *man/qqtrunc.Rd
+541466e973588ef20e3166cf5760f068 *man/qtrunc.Rd
+947a6b7302dafd4af9e8c1aed8f12d45 *man/rtrunc.Rd
+46fd0093a5f18d19fbd755d9104ca415 *man/vartrunc.Rd
