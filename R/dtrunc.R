@@ -15,6 +15,11 @@ dtrunc <- function( x, spec, a = -Inf, b= Inf, ... )
     tt <- rep( 0, length( x ) )
     g <- get( paste( "d", spec, sep="" ), mode="function" )
     G <- get( paste( "p", spec, sep="" ), mode="function" )
+    G.a <- G( a, ... )
+    G.b <- G( b, ... )
+    if ( G.a == G.b ) {
+        stop( "Trunction interval is not inside the domain of the density function" )
+    }    
     tt[x >= a & x <= b] <- g( x[x >= a & x <= b], ...) / ( G( b, ... ) - G( a, ... ) )
     return( tt )
 }

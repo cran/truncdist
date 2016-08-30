@@ -18,6 +18,11 @@ ptrunc <- function( q, spec, a = -Inf, b = Inf, ... )
     G <- get( paste( "p", spec, sep="" ), mode="function" )
     tt <- G( apply( cbind( apply( cbind( q, bb ), 1, min ), aa ), 1, max ), ... )
     tt <- tt - G ( aa, ... )
+    G.a <- G( aa, ... )
+    G.b <- G( bb, ... )
+    if ( any( G.a == G.b ) ) {
+        stop( "Trunction interval is not inside the domain of the distribution function" )
+    }    
     result <- tt / ( G( bb, ... ) - G ( aa, ... ) )
     return( result )
 }

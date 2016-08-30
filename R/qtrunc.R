@@ -15,6 +15,11 @@ qtrunc <- function( p, spec, a = -Inf, b = Inf, ... )
     tt <- p
     G   <- get( paste( "p", spec, sep="" ), mode = "function" )
     Gin <- get( paste( "q", spec, sep="" ), mode = "function" )
+    G.a <- G( a, ... )
+    G.b <- G( b, ... )
+    if ( G.a == G.b ) {
+        stop( "Trunction interval is not inside the domain of the quantile function" )
+    }    
     result <- pmin( pmax( a, Gin( G( a, ... ) + 
               p * ( G( b, ... ) - G( a, ... )), ... ) ), b )
     return( result )

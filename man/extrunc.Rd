@@ -27,7 +27,7 @@ Truncated Distributions, \emph{Journal of Statistical Software},
 16, August 2006, \url{http://www.jstatsoft.org/v16/c02}
 }
 \author{
-Frederick Novomestky \email{fnovomes@poly.edu}
+Frederick Novomestky \email{fn334@nyu.edu}
 
 Saralees Nadarajah \email{saralees.nadarajah@manchester.ac.uk}
 }
